@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce-Website</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="{{ url_for('index') }}"><img src="static/img/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('shop') }}">Shop</a></li>
+                <li><a href="{{ url_for('blog') }}">Blog</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+               
+                <a href="#" id="close-icon"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile-menu">
+            <a href="{{ url_for('cart') }}"> <i class="fas fa-shopping-cart"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="pro-details" class="section-p1">
+        <div id="single-pro-image">
+            <img src="static/img/products/pant.jpg" class="lol" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-colum">
+                    <img src="static/img/products/pant.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-colum">
+                    <img src="static/img/products/pant1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-colum">
+                    <img src="static/img/products/pant2.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-colum">
+                    <img src="static/img/products/pant3.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="single-pro-details">
+            <h6>Home / T-shirt</h6>
+            <h4>Men's Fashion T shirt</h4>
+            <h2>$135.00</h2>
+            <select>
+                <option>Select Size</option>
+                <option>XS</option>
+                <option>Small</option>
+                <option>Large</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>XXXL</option>
+                <option>4-XL</option>
+                <option>5-XL</option>
+                <option>6-XL</option>
+                <option>7-XL</option>
+            </select>
+            <input type="number" value="1">
+            <a href="{{url_for('purchase')}}"><button class="normal">Purchase &#8594;</button><br></a>
+            <a href="{{url_for('custom1')}}"><button class="normal">Custom</button><br></a>
+            <h4>Product Details</h4>
+            <span>Good t-shirt designs are those that people want to wear. Make sure your t-shirt doesn’t
+                 get stuffed in the back of the closet with a custom detailed t-shirt designed just for 
+                 you by a professional designer. Need ideas? We’ve collected some amazing examples of detailed 
+                 t-shirts created by our global community of designers. Get inspired and start planning your 
+                 custom detailed t-shirt design today.</span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1" >
+        <h2>Featured Products</h2>
+        <p>Summer collection New Morden Design</p>
+        <div class="pro-container" >
+            <div class="pro">
+                <img src="static/img/products/n1.jpg" alt="">
+                <div class="desciption">
+                    <span>Adidas</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="{{ url_for('sproduct1') }}"><i class="fas fa-shopping-cart shopping-icon"></i></a>
+            </div>
+            <div class="pro">
+                <img src="static/img/products/n2.jpg" alt="">
+                <div class="desciption">
+                    <span>Adidas</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="{{ url_for('sproduct1') }}"><i class="fas fa-shopping-cart shopping-icon"></i></a>
+            </div>
+            <div class="pro">
+                <img src="static/img/products/n3.jpg" alt="">
+                <div class="desciption">
+                    <span>Adidas</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="{{ url_for('sproduct1') }}"><i class="fas fa-shopping-cart shopping-icon"></i></a>
+            </div>
+            <div class="pro">
+                <img src="static/img/products/n5.jpg" alt="">
+                <div class="desciption">
+                    <span>Adidas</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="{{ url_for('sproduct1') }}"><i class="fas fa-shopping-cart shopping-icon"></i></a>
+            </div>  
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sing Up For NewsLetters</h4>
+            <p>Get E-mail update about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="static/img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>Nawn-Shahr Road, Streat 32, Abbottabad </p>
+            <p><strong>Phone:</strong>(+92)3319197112, (+93)772723284</p>
+            <p><strong>Hours:</strong>08:00 - 22:00 Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Term & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div><div class="col">
+            <h4>My Account</h4>
+            <a href="#">sign in</a>
+            <a href="#">view cart</a>
+            <a href="#">my wishlist</a>
+            <a href="#">track my order</a>
+            <a href="#">help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Stor or Google Play</p>
+            <div class="row">
+                <img src="static/img/pay/app.jpg" alt="">
+                <img src="static/img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="static/img/pay/pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>2023, Alijan Rahimi-HTML CSS Project</p>
+        </div>
+
+    </footer>
+
+    <script src="static/main.js"></script>
+</body>
+</html>
